@@ -1,12 +1,12 @@
 #!/bin/bash
 
-set -e
+#set -e
 
-handle_error(){
-    echo "Eroor occured at line number : $1 , Error command : $2 "
-}
+# handle_error(){
+#     echo "Eroor occured at line number : $1 , Error command : $2 "
+# }
 
-trap 'handle_error ${LINENO} "$BASH_COMMAND"' ERR
+# trap 'handle_error ${LINENO} "$BASH_COMMAND"' ERR
 
 Timestamp=$(date +%F-%H-%M-%S)
 Script_Name=$(echo $0 | cut -d "." -f1)
