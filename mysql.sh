@@ -2,10 +2,10 @@
 
 source ./common.sh
 
-check_root
-
 echo "Plese enter mysql DB Password : "
 read -s mysql_root_password
+
+check_root
 
 dnf install mysql-server -y &>>$Logfile
 Validate $? "Installing mysql server"
